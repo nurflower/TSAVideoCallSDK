@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
 }
 
+
 android {
     compileSdkVersion 30
 
@@ -12,7 +13,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -34,6 +35,7 @@ android {
     }
 
 }
+
 kapt {
     correctErrorTypes = true
     useBuildCache = true
@@ -68,9 +70,9 @@ dependencies {
     api 'com.squareup.okhttp3:okhttp-tls:4.8.1'
     api 'com.squareup.okhttp3:logging-interceptor:4.8.1'
 
-    api 'com.squareup.moshi:moshi-kotlin:1.9.3'
-    implementation 'com.squareup.moshi:moshi-adapters:1.9.3'
-    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.9.3'
+    api 'com.squareup.moshi:moshi-kotlin:1.12.0'
+    implementation 'com.squareup.moshi:moshi-adapters:1.12.0'
+    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.12.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
